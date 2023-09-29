@@ -1,0 +1,189 @@
+	/* Customize Animation Library */
+    .animate__animated.animate__fadeInLeft.el-1,
+    {
+        --animate-delay: 1s;
+    }
+    .animate__animated.animate__fadeInDown.el-2 {
+        --animate-delay: 2s;
+    }
+    .animate__animated.animate__fadeInUp.el-3 {
+        --animate-delay: 2.5s;
+    }
+    .animate__animated.animate__fadeInRight.el-4 {
+        --animate-delay: 1.5s;
+    }
+    :root {
+        --main-color: #51568d;
+        --animate-duration: 1500ms;
+          --animate-delay: 0.9s;
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    }
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    }
+
+    /*Global Classes*/
+    .text-main-color { color : var(--main-color); }
+    .bg-main-color { background-color: var(--main-color); }
+    .w-300-px { width : 300px !important}
+    .h-300-px { height : 300px !important}
+    .h-75-px { height:75px !important}
+    .h-2-px{height: 2px !important}
+    .h-3-px{height: 3px !important}
+    .h-5-px{height: 5px !important}
+    .main-font-family {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    /********************/
+
+    
+    
+    #sidebar-wrapper {
+      position: fixed;
+      z-index: 2;
+      right: 0;
+      top:0;
+      width: 250px;
+      height: 100%;
+      transition: all 0.4s ease 0s;
+      transform: translateX(250px);
+      background: #a7abda;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+
+    #sidebar-wrapper.active {
+      right: 250px;
+      width: 300px;
+      transition: all 0.4s ease 0s;
+      /* height:auto !important;
+      overflow: scroll; */
+    }
+    #sidebar-wrapper a {
+        text-align: center;
+    }
+    #sidebar-wrapper a:hover , #sidebar-wrapper a:focus{
+        color:var(--main-color);
+    }
+    .sidebar-nav .metismenu a:hover,
+    .sidebar-nav .metismenu a:focus,
+    .sidebar-nav .metismenu a:active,
+    .sidebar-nav .metismenu .mm-active > a,
+    .sidebar-nav .metismenu .mm-active > a:hover,
+    .sidebar-nav .metismenu .mm-active > a:focus
+    {
+        color:var(--main-color);
+    }
+    .menu-toggle {
+      position: fixed;
+      right: 15px;
+      top: 15px;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      color: #fff;
+      background: #5E6182;
+      opacity:0.5;
+      line-height: 50px;
+      z-index: 999;
+      border-radius: 50px 0px 0px 50px;
+      padding-left:15px;
+    }
+    .menu-toggle:focus, .menu-toggle:hover {
+      color: #fff;
+    }
+    .menu-toggle:hover {
+        background: #51568d;
+      text-decoration: none;
+    }
+    .menu-toggle-text{
+        margin-right:5px;
+        color:white
+    }
+    .btn-xl {
+      padding: 1.25rem 2.5rem;
+    }
+    
+
+    .inside-header{
+        position:absolute;
+        bottom:0;
+        left:0;
+    }
+    .logo-img{
+        width:130px;
+        height:130px;
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+    
+    .header-text-top{
+        font-weight: bold;
+    }
+   /* Set overlay on the carousel images */
+   .carousel-item:after {
+        content:"";
+        display:block;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color:var(--main-color);
+        opacity: .3;
+    }
+/***********************************************************************************************/
+    /* Accreditation Section */
+    .accreditation{
+        
+    }
+/***********************************************************************************************/
+    /* Academic Section */
+    .img-academic {
+        width:90%;
+    }
+    .img-academic img{
+        object-fit:cover; 
+        border:1.3vw solid var(--main-color);
+    }
+
+    .academics .card-body {
+        
+    }
+    .academics .card-body a {
+        
+    }
+/***********************************************************************************************/
+
+    .middle-section .left .left-img{
+        box-shadow: -20px -20px 5px 0 #a4a6bd;
+    }
+    .middle-section .right .right-img{
+        box-shadow: 20px -20px 5px 0 #a4a6bd;
+    }
+/***********************************************************************************************/
+/* Student Life */
+.school-profile .left , .student-life .left {
+ width:90%;
+}
+
+/***********************************************************************************************/
+/** Navbar Bottom **/
+.bottom-nav-bar a {
+color:white;
+}
+.bottom-nav-bar ul {
+background-color: var(--main-color);
+}
+/******************************************/
+
+/** Back to top **/
+.back-to-top {
+position: fixed;
+z-index:9999;
+bottom: 25px;
+right: 25px;
+display: none;
+}
